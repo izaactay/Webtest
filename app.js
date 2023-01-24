@@ -8,7 +8,7 @@ searchInput.addEventListener("input", e =>{
     console.log(value)
 })
 
-fetch('./codes.json')
+fetch('codes.json')
     .then(res => res.json())
     .then(data => {
         codes = data.map( code => {
