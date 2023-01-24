@@ -1,0 +1,22 @@
+[
+    {
+      "Code": "AG",
+      "Description": "BACKUP FORWARDED TO GENERAL ACCOUNTING FOR EXCEPTION APPROVAL"
+    },
+    {
+      "Code": "CE",
+      "Description": "STALE CHECK ‐ REISSUE ‐ UNCLAIMED CHECK"
+    },
+    {
+      "Code": "ER",
+      "Description": "AP AWAITING EDI INVOICE FROM VENDOR"
+    },
+    {
+      "Code": "PB",
+      "Description": "INVOICE UNIT PRICE IS > UNIT PRICE ON PO"
+    },
+    {
+      "Code": "R9",
+      "Description": "REQUIRE I‐94 FORM ‐ VISA INFORMATION"
+    }
+]
