@@ -1,22 +1,532 @@
 [
-    {
-      "Code": "AG",
-      "Description": "BACKUP FORWARDED TO GENERAL ACCOUNTING FOR EXCEPTION APPROVAL"
-    },
-    {
-      "Code": "CE",
-      "Description": "STALE CHECK ‐ REISSUE ‐ UNCLAIMED CHECK"
-    },
-    {
-      "Code": "ER",
-      "Description": "AP AWAITING EDI INVOICE FROM VENDOR"
-    },
-    {
-      "Code": "PB",
-      "Description": "INVOICE UNIT PRICE IS > UNIT PRICE ON PO"
-    },
-    {
-      "Code": "R9",
-      "Description": "REQUIRE I‐94 FORM ‐ VISA INFORMATION"
-    }
+  {
+    "Code": "AE",
+    "Description": "BACKUP FORWARDED TO EFM FOR EXCEPTION APPROVAL",
+    "Notes": "IF FURTHER ACTION IS REQUIRED, YOU WILL BE NOTIFIED"
+  },
+  {
+    "Code": "AG",
+    "Description": "BACKUP FORWARDED TO GENERAL ACCOUNTING FOR EXCEPTION APPROVAL",
+    "Notes": "IF FURTHER ACTION IS REQUIRED, YOU WILL BE NOTIFIED"
+  },
+  {
+    "Code": "AP",
+    "Description": "BACKUP FORWARDED TO PAYROLL FOR EXCEPTION APPROVAL",
+    "Notes": "IF FURTHER ACTION IS REQUIRED, YOU WILL BE NOTIFIED"
+  },
+  {
+    "Code": "AR",
+    "Description": "ATTACH RECEIPTS",
+    "Notes": ""
+  },
+  {
+    "Code": "AT",
+    "Description": "BACKUP FORWARDED TO TRAVEL ACCOUNTING FOR EXCEPTION APPROVAL",
+    "Notes": "IF FURTHER ACTION IS REQUIRED, YOU WILL BE NOTIFIED"
+  },
+  {
+    "Code": "CA",
+    "Description": "CHECK CANCELLED ‐ WRONG AMOUNT",
+    "Notes": ""
+  },
+  {
+    "Code": "CB",
+    "Description": "CHECK CANCELLED ‐ WRONG INVOICE NUMBER",
+    "Notes": ""
+  },
+  {
+    "Code": "CC",
+    "Description": "CHECK CANCELLED ‐ WRONG VCK# OR WRONG VENDOR",
+    "Notes": ""
+  },
+  {
+    "Code": "CD",
+    "Description": "STALE CHECK ‐ UNCLAIMED CHECK",
+    "Notes": ""
+  },
+  {
+    "Code": "CE",
+    "Description": "STALE CHECK ‐ REISSUE ‐ UNCLAIMED CHECK",
+    "Notes": ""
+  },
+  {
+    "Code": "CF",
+    "Description": "STALE CHECK ‐ NO REISSUE ‐ UNCLAIMED CHECK",
+    "Notes": ""
+  },
+  {
+    "Code": "CG",
+    "Description": "DUPLICATE PAYMENT ‐ KEY ERROR ‐ NO REISSUE",
+    "Notes": ""
+  },
+  {
+    "Code": "CH",
+    "Description": "DUPLICATE PAYMENT ‐ PER DEPT ‐ NO REISSUE",
+    "Notes": ""
+  },
+  {
+    "Code": "CI",
+    "Description": "VARIOUS MAIL DELIVERY PROBLEM ‐ CHECK CANCEL",
+    "Notes": ""
+  },
+  {
+    "Code": "CJ",
+    "Description": "NOT NEEDED ‐ CHECK CANCELLED ‐ NO REISSUE",
+    "Notes": ""
+  },
+  {
+    "Code": "CK",
+    "Description": "REISSUE ‐ OTHERS",
+    "Notes": ""
+  },
+  {
+    "Code": "CL",
+    "Description": "DUPLICATE PAYMENT PER VENDOR ‐ NO REISSUE",
+    "Notes": ""
+  },
+  {
+    "Code": "CM",
+    "Description": "OFFSET CREDIT AND DEBIT",
+    "Notes": ""
+  },
+  {
+    "Code": "CN",
+    "Description": "STOPPAYPROG",
+    "Notes": ""
+  },
+  {
+    "Code": "CO",
+    "Description": "PER VENDOR CREDIT OFFSET OUTSTANDING DEBIT",
+    "Notes": ""
+  },
+  {
+    "Code": "CR",
+    "Description": "CHECK RECEIVED FROM VENDOR FOR CREDIT INVOICE",
+    "Notes": ""
+  },
+  {
+    "Code": "CS",
+    "Description": "STOP PAYMENT FROM DEPT ‐ REISSUE",
+    "Notes": ""
+  },
+  {
+    "Code": "CT",
+    "Description": "STOP PAYMENT FROM DEPT ‐ NO REISSUE",
+    "Notes": ""
+  },
+  {
+    "Code": "CU",
+    "Description": "STOP PAYMENT FROM VENDOR ‐ REISSUE",
+    "Notes": ""
+  },
+  {
+    "Code": "CV",
+    "Description": "STOP PAYMENT FROM VENDOR ‐ NO REISSUE",
+    "Notes": ""
+  },
+  {
+    "Code": "CW",
+    "Description": "WRITE OFF BY GEN ACCTG ‐ NO REISSUE",
+    "Notes": ""
+  },
+  {
+    "Code": "CZ",
+    "Description": "REFER TO CREDIT FILE",
+    "Notes": ""
+  },
+  {
+    "Code": "DA",
+    "Description": "NEED HOME ADDRESS OF PAYEE",
+    "Notes": ""
+  },
+  {
+    "Code": "DB",
+    "Description": "ADDRESS IS MISSING ON DOCUMENT",
+    "Notes": "WE CANNOT PAY USING PROVIDED DOCUMENTS WITHOUT AN ADDRESS"
+  },
+  {
+    "Code": "DC",
+    "Description": "INVOICE RETURNED TO DEPT FOR SIGNATURE",
+    "Notes": ""
+  },
+  {
+    "Code": "DD",
+    "Description": "BLANKET AGREEMENT EXPIRED",
+    "Notes": ""
+  },
+  {
+    "Code": "DE",
+    "Description": "CHANCELLOR'S APPROVAL REQUIRED",
+    "Notes": "IF FURTHER ACTION IS REQUIRED, YOU WILL BE NOTIFIED"
+  },
+  {
+    "Code": "DF",
+    "Description": "DEAN'S APPROVAL REQUIRED",
+    "Notes": "IF FURTHER ACTION IS REQUIRED, YOU WILL BE NOTIFIED"
+  },
+  {
+    "Code": "DG",
+    "Description": "DIRECTOR'S SIGNATURE REQUIRED",
+    "Notes": "IF FURTHER ACTION IS REQUIRED, YOU WILL BE NOTIFIED"
+  },
+  {
+    "Code": "DI",
+    "Description": "FOREIGN/NEED VISA INFORMATION",
+    "Notes": ""
+  },
+  {
+    "Code": "DJ",
+    "Description": "NEED ITEMIZED RECEIPTS",
+    "Notes": ""
+  },
+  {
+    "Code": "DK",
+    "Description": "BUSINESS JUSTIFICATION REQUIRED",
+    "Notes": "PLEASE PROVIDE A DETAILED BUSINESS JUSTIFICATION IN COMPLIANCE WITH UNIVERSITY POLICY"
+  },
+  {
+    "Code": "DL",
+    "Description": "INSURANCE",
+    "Notes": ""
+  },
+  {
+    "Code": "DM",
+    "Description": "CANNOT EXCEED GIFT ALLOWANCE",
+    "Notes": ""
+  },
+  {
+    "Code": "DN",
+    "Description": "WAITING FOR GUEST LIST",
+    "Notes": ""
+  },
+  {
+    "Code": "DO",
+    "Description": "PERSONNEL RULE 260",
+    "Notes": ""
+  },
+  {
+    "Code": "DP",
+    "Description": "SOCIAL SECURITY NUMBER MISSING",
+    "Notes": ""
+  },
+  {
+    "Code": "DR",
+    "Description": "ORIGINAL RECEIPT REQUIRED",
+    "Notes": ""
+  },
+  {
+    "Code": "DS",
+    "Description": "INVALID FAU",
+    "Notes": ""
+  },
+  {
+    "Code": "DT",
+    "Description": "PO NUMBER MISSING",
+    "Notes": "Please provide an open and valid PO. Please notify the AP Processor via email once complete."
+  },
+  {
+    "Code": "DU",
+    "Description": "NEED CLAIMANT'S SIGNATURE",
+    "Notes": ""
+  },
+  {
+    "Code": "DV",
+    "Description": "EXCEED PO",
+    "Notes": ""
+  },
+  {
+    "Code": "DX",
+    "Description": "SPECIAL ITEMS JUSTIFICATION REQUIRED",
+    "Notes": "PLEASE REFER TO POLICY 740.1 ATTACHMENT A http://www.adminpolicies.ucla.edu/app/Default.aspx?&id=740‐1"
+  },
+  {
+    "Code": "DY",
+    "Description": "ORIGINAL INVOICE REQUIRED",
+    "Notes": "PLEASE FORWARD THE ORIGINAL DOCUMENT TO AP"
+  },
+  {
+    "Code": "DZ",
+    "Description": "DEAN/VICE CHANCELLOR APPROVAL",
+    "Notes": "IF FURTHER ACTION IS REQUIRED, YOU WILL BE NOTIFIED"
+  },
+  {
+    "Code": "EA",
+    "Description": "EXCEPTION APPROVAL",
+    "Notes": ""
+  },
+  {
+    "Code": "EC",
+    "Description": "BRUINBUY CATALOG PRICE MISMATCH. PURCHASING WILL RESOLVE WITH VENDOR",
+    "Notes": "NO ACTION NEEDED"
+  },
+  {
+    "Code": "EF",
+    "Description": "FREIGHT NOT ALLOWED ON BRUINBUY CATALOG ORDERS. PURCHASING WILL OBTAIN\nCREDIT FROM VENDOR",
+    "Notes": "NO ACTION NEEDED"
+  },
+  {
+    "Code": "ER",
+    "Description": "AP AWAITING EDI INVOICE FROM VENDOR",
+    "Notes": "NO ACTION NEEDED"
+  },
+  {
+    "Code": "EX",
+    "Description": "EXCEPTIONAL APPROVAL REQUIRED",
+    "Notes": "Reimbursements that are against policy and/or require additional review and approval."
+  },
+  {
+    "Code": "FE",
+    "Description": "PENDING FOREIGN PAYMENT REVIEW",
+    "Notes": ""
+  },
+  {
+    "Code": "GA",
+    "Description": "INVALID FAU",
+    "Notes": ""
+  },
+  {
+    "Code": "GO",
+    "Description": "NEED TO CHANGE THE OBJECT CODE",
+    "Notes": ""
+  },
+  {
+    "Code": "IE",
+    "Description": "PENDING IT SECURITY COMPLIANCE REVIEW - EQUIPMENT",
+    "Notes": "This review covers hardware and computer equipment"
+  },
+  {
+    "Code": "IT",
+    "Description": "PENDING IT DATA SECURITY REVIEW",
+    "Notes": "This review covers software, SaaS, and webhosting services that may be used to manage and share confidential data"
+  },
+  {
+    "Code": "MG",
+    "Description": "CAO/CFO APPROVAL REQUIRED",
+    "Notes": ""
+  },
+  {
+    "Code": "OA",
+    "Description": "EXCEPTION APPROVAL FOR ENTERTAINMENT RELATED ITEM",
+    "Notes": "IF FURTHER ACTION IS REQUIRED, YOU WILL BE NOTIFIED"
+  },
+  {
+    "Code": "PA",
+    "Description": "QUANTITY INVOICED > QUANTITY ON PO",
+    "Notes": "Please submit a change order to increase the quantity on the applicable lines on the PO.  To see a copy of the invoice view the \"Invoice Payment\" tab & click \"e‐Invoice\" to have a copy sent to your campus email.  If you require assistanc the change order please contact the BruinBuy help desk. Once the PO has been updated, please notify the AP Proces email."
+  },
+  {
+    "Code": "PB",
+    "Description": "INVOICE UNIT PRICE IS > UNIT PRICE ON PO",
+    "Notes": "Please submit a change order to adjust the unit price on the applicable lines on the PO.  To see a copy of the invoice p view the \"Invoice Payment\" tab & click \"e‐Invoice\" to have a copy sent to your campus email.  If you require assistanc the cahnge order please contact the BruinBuy help desk. Once the PO has been updated, please notify the AP Procesor via email"
+  },
+  {
+    "Code": "PD",
+    "Description": "INVOICE AMOUNT > PO AMOUNT",
+    "Notes": "Please submit a change order to increase funds on the PO.  To see a copy of the invoice please view the \"Invoice Pay tab & click \"e‐Invoice\" to have a copy sent to your campus email.  If you require assistance with the change order ple contact the BruinBuy help desk. Once the PO has been updated, please notify the AP Processor via email."
+  },
+  {
+    "Code": "PE",
+    "Description": "PO IS CLOSED",
+    "Notes": "Please create a new PO to replace the closed PO or request a credit memo from vendor if this invoice is a duplicated If you require assistance please contact the BruinBuy help desk. Once the new PO has been created or a credit memo received, please notify the AP Processor via email."
+  },
+  {
+    "Code": "PF",
+    "Description": "PO IS CREATED FOR ANOTHER VENDOR",
+    "Notes": "The PO provided on the invoice was created for another vendor.  Please close the PO and create a new one using the VCK. Please notify the AP Processor via email with the new PO."
+  },
+  {
+    "Code": "PG",
+    "Description": "LINES ON INVOICE DO NOT MATCH PO",
+    "Notes": "Please check the ORD screen to verify what was invoiced. Submit a change order by adding new lines for the invoiced or obtain a corrected invoice or a credit memo from the vendor. Please notify the AP Processor via email once the appropriate action has been completed completed."
+  },
+  {
+    "Code": "PH",
+    "Description": "PO ON H STATUS‐PLEASE REPOST IT",
+    "Notes": "When reposted, please notify the AP Processor via email."
+  },
+  {
+    "Code": "PI",
+    "Description": "PO IS NOT POSTED",
+    "Notes": "The PO provided on the invoice has not posted in PAC. This could be a contract agreement/requistion. Please review. posting, please contact the AP Processor via email."
+  },
+  {
+    "Code": "PK",
+    "Description": "BRUINBUY CATALOG ORDER MISMATCH",
+    "Notes": "Please create a new PO or request a credit memo from the vendor. Please contact the AP Processor via email with th PO or once the credit has been uploaded to the AP Invoice Submission Site."
+  },
+  {
+    "Code": "PO",
+    "Description": "AP OVERRIDE",
+    "Notes": "This is an internal hold code.  Once overridden, the invoice will be processed for payment. No action is required on yo however, you will be notified if we require any additional information."
+  },
+  {
+    "Code": "PQ",
+    "Description": "REMOVE QUANTITY‐UNIT AND PRICE. PO WILL CLOSE IF WE PAY AS IS",
+    "Notes": "If you intended for this PO to be a blanket and pay multiple invoices, please submit a change order to remove the uni and quantity.  If you require assistance with the change order please contact the BruinBuy help desk. Once the PO ha updated, please notify the AP Processor via email."
+  },
+  {
+    "Code": "PU",
+    "Description": "IS THE PAYEE A UNIVERSITY EMPLOYEE?",
+    "Notes": ""
+  },
+  {
+    "Code": "PV",
+    "Description": "MAINTENANCE AGREEMENT SHOULD BE CREATED ON 'A' CLASS RELEASE ORDER",
+    "Notes": ""
+  },
+  {
+    "Code": "PW",
+    "Description": "WHERE IS THE SERVICE PERFORMED?",
+    "Notes": "Please notify the AP Processor via email with the location of service."
+  },
+  {
+    "Code": "PX",
+    "Description": "NOT VALID PO. PO DOES NOT EXIST ON OUR SYSTEM",
+    "Notes": "Please provide a valid PO. Notify the AP Processor via email."
+  },
+  {
+    "Code": "PY",
+    "Description": "PLEASE DO RECEIVING ON A40 SCREEN",
+    "Notes": "It is not necessary to notify AP once receiving is complete. This is an automatic process and the status should change automatically from H to P. If the status does not change, the receiving function has not been properly completed."
+  },
+  {
+    "Code": "PZ",
+    "Description": "CAN'T TAKE CREDIT UNTIL DEBIT IS PAID",
+    "Notes": "We have received a credit for which there is no corresponding debit. Please submit the debit invoice to the  AP Subm Site. Please notify the AP Processor via email when this has been done."
+  },
+  {
+    "Code": "R8",
+    "Description": "REQUIRE 8233 FORM IF ELIGIBLE FOR TAX TREATY",
+    "Notes": ""
+  },
+  {
+    "Code": "R9",
+    "Description": "REQUIRE I‐94 FORM ‐ VISA INFORMATION",
+    "Notes": ""
+  },
+  {
+    "Code": "RA",
+    "Description": "CERTIFICATION OF ACADEMIC ACTIVITY",
+    "Notes": ""
+  },
+  {
+    "Code": "RB",
+    "Description": "REQUIRE A CANCELLED CHECK OR BANK CARD STATEMENT",
+    "Notes": ""
+  },
+  {
+    "Code": "RC",
+    "Description": "REQUIRE CASH RECEIPT",
+    "Notes": ""
+  },
+  {
+    "Code": "RG",
+    "Description": "FORWARD A COMPLETE SET OF THE INVOICE‐MISSING PAGES",
+    "Notes": ""
+  },
+  {
+    "Code": "RM",
+    "Description": "REIMBRSMNT",
+    "Notes": "PO IS UN QUEUE NO ACTION NEEDED"
+  },
+  {
+    "Code": "RO",
+    "Description": "REQUIRE THE ORIGINAL CREDIT CARD STATEMENT",
+    "Notes": ""
+  },
+  {
+    "Code": "RP",
+    "Description": "REQUIRE COPY OF PASSPORT",
+    "Notes": ""
+  },
+  {
+    "Code": "RR",
+    "Description": "REQUIRE A COPY OF THE CREDIT CARD STATEMENT",
+    "Notes": ""
+  },
+  {
+    "Code": "RS",
+    "Description": "ATTCH DOCS",
+    "Notes": ""
+  },
+  {
+    "Code": "RT",
+    "Description": "REQUIRE ITIN NUMBER",
+    "Notes": ""
+  },
+  {
+    "Code": "RW",
+    "Description": "REQUIRE W8‐BEN FORM WITH SIGNATURE",
+    "Notes": ""
+  },
+  {
+    "Code": "SV",
+    "Description": "PENDING EXCEPTIONAL REVIEW OF SERVICES",
+    "Notes": ""
+  },
+  {
+    "Code": "TA",
+    "Description": "TRAVEL ADV",
+    "Notes": ""
+  },
+  {
+    "Code": "VA",
+    "Description": "PAYEE ADDRESS / NO PUNCTUATIONS / ABBREVIATE ST, BLVD ETC.",
+    "Notes": "PLEASE SEE OUR WEBSITE FOR THE PROPER ADDRESS FORMAT.\nhttp://www.accounting.ucla.edu/ap/forms/otp.pdf"
+  },
+  {
+    "Code": "VB",
+    "Description": "VENDOR BASE",
+    "Notes": ""
+  },
+  {
+    "Code": "VC",
+    "Description": "VEN CITY",
+    "Notes": "PLEASE SEE OUR WEBSITE FOR THE PROPER ADDRESS FORMAT.\nhttp://www.accounting.ucla.edu/ap/forms/otp.pdf"
+  },
+  {
+    "Code": "VL",
+    "Description": "VENDOR LOCATION",
+    "Notes": ""
+  },
+  {
+    "Code": "VN",
+    "Description": "NAME FORMAT / LAST, FIRST / REMOVE TITLE / REMOVE PUNCTUATIONS",
+    "Notes": "PLEASE SEE OUR WEBSITE FOR THE PROPER ADDRESS FORMAT.\nhttp://www.accounting.ucla.edu/ap/forms/otp.pdf"
+  },
+  {
+    "Code": "VS",
+    "Description": "VEN ST CD",
+    "Notes": "PLEASE SEE OUR WEBSITE FOR THE PROPER ADDRESS FORMAT.\nhttp://www.accounting.ucla.edu/ap/forms/otp.pdf"
+  },
+  {
+    "Code": "VT",
+    "Description": "TAX ID / INVALID FORMAT / MISSING / UC REGENTS TAX ID",
+    "Notes": "PLEASE SEE OUR WEBSITE FOR THE PROPER ADDRESS FORMAT.\nhttp://www.accounting.ucla.edu/ap/forms/otp.pdf"
+  },
+  {
+    "Code": "VY",
+    "Description": "COUNTRY CODE / LEAVE BLANK FOR USA",
+    "Notes": "PLEASE SEE OUR WEBSITE FOR THE PROPER ADDRESS FORMAT.\nhttp://www.accounting.ucla.edu/ap/forms/otp.pdf"
+  },
+  {
+    "Code": "VZ",
+    "Description": "ZIP CODE / INVALID / ADD TO CITY FIELD IF FOREIGN ADDRESS",
+    "Notes": "PLEASE SEE OUR WEBSITE FOR THE PROPER ADDRESS FORMAT.\nhttp://www.accounting.ucla.edu/ap/forms/otp.pdf"
+  },
+  {
+    "Code": "W9",
+    "Description": "W9 VERIFY",
+    "Notes": "IF FURTHER ACTION IS REQUIRED, YOU WILL BE NOTIFIED"
+  },
+  {
+    "Code": "WC",
+    "Description": "WRONG CLASS",
+    "Notes": ""
+  },
+  {
+    "Code": "XX",
+    "Description": "MULTIPLE ISSUES",
+    "Notes": "Read notes from the AP Processor:\n1. Go to BruinBuy.\n2. Select “All Orders” or “My Orders”.\n3. Filter or Select the correct Purchase Order Number. Make sure that you are selecting the Purchase Order Number ends in “00”. (Click on the actual purchase order number, not the circle or “radio” button in the left column.)\n4. Select “Order Invoice Summary” link on the far right side.\n5. Select “Invoice Number”.\n6. Select “Invoice Detail”.\n7. Read notes in “Description” field.\nIf you have additional questions, please please email the AP Processor."
+  }
 ]
