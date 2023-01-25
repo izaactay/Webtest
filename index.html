@@ -5,20 +5,36 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.webcomponents.ucla.edu/1.0.0/css/ucla-lib.min.css">
   <script src="app.js" defer></script>
   <title>Document</title>
 </head>
-<body>
+<body style="margin:0;padding:1rem">
   <div class="search-wrapper">
-    <label for="search">Search codes</label>
-    <input type="search" id="search" data-search>
+    <h2>H & I Hold Reason Code Search</h2>
+    <label for="search">What H & I Hold Reason Code did you receive?</label>
+    <input class = "text__input" type="text" id="search" data-search style="width: 300px;max-width: 100%;">
   </div>
   <div class="code-cards" data-code-cards-container></div>
+  <table class="fixed-table__wrapper" id="code_table" style="margin-top:1rem">
+    <thead>
+      <tr>
+          <th class="fixed-table__sticky-col">Code Name</th>
+          <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
   <template data-code-template>
-    <div class="card">
-      <div class="header" data-header></div>
-      <div class="body" data-body></div>
-    </div>
+    <tr class="card">
+      <td class="header  fixed-table__sticky-col" data-header></div>
+      <td class="body" data-body></div>
+    </tr>
   </template>
+</tbody>
+</table>
+
 </body>
+<footer>
+  
+</footer>
 </html>
