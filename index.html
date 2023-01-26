@@ -16,23 +16,26 @@
     <input class = "text__input" type="text" id="search" data-search style="width: 300px;max-width: 100%;">
   </div>
   <div class="code-cards" data-code-cards-container></div>
-  <table class="fixed-table__wrapper" id="code_table" style="margin-top:1rem">
-    <thead>
-      <tr>
-          <th class="fixed-table__sticky-col">Code Name</th>
-          <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-  <template data-code-template>
-    <tr class="card">
-      <td class="header  fixed-table__sticky-col" data-header></div>
-      <td class="body" data-body></div>
-    </tr>
-  </template>
-</tbody>
-</table>
-
+  <div class="fixed-table" style="margin-top:1rem">
+  
+    <table class="fixed-table__wrapper scrollTable" id="code_table">
+      <thead>
+        <tr>
+            <th class>Code Name</th>
+            <th class>Description</th>
+        </tr>
+      </thead>
+      <tbody >
+        <template data-code-template>
+          <tr class="card">
+            <td class="header" data-header></div>
+            <td class="body" data-body></div>
+          </tr>
+        </template>
+      </tbody>
+    </table>
+  
+  </div>
 </body>
 <footer>
   

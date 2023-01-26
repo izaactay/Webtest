@@ -32,6 +32,12 @@ input {
   color: #777;
 }
 */
+
+tbody {
+  height: 300px;
+  overflow: auto;
+}
+
 .hide {
   display: none;
 }
