@@ -6,11 +6,22 @@ const searchInput = document.querySelector("[data-search]")
 let codes = []
 
 searchInput.addEventListener("input", e => {
+  const codelength = codes.length;
+  var invisiblecount = 0;
   const value = e.target.value.toLowerCase()
   codes.forEach(code => {
     const isVisible = code.Code.toLowerCase().includes(value)
     code.element.classList.toggle("hide", !isVisible)
+    if (!isVisible) {
+      invisiblecount++;
+    }
   })
+
+  if (invisiblecount == codelength){
+    document.getElementById("error_message").style.display = "block";
+  } else {
+    document.getElementById("error_message").style.display = "none";
+  }
 })
 
 fetch("https://izaactay.github.io/codes.json")
@@ -27,10 +38,12 @@ fetch("https://izaactay.github.io/codes.json")
       var newRow = tbodyRef.insertRow();
       var codeCell = newRow.insertCell();
       var descriptionCell = newRow.insertCell();
+      var notesCell = newRow.insertCell();
       codeCell.appendChild(document.createTextNode(code.Code));
       descriptionCell.appendChild(document.createTextNode(code.Description));
+      notesCell.appendChild(document.createTextNode(code.Notes));
 
-      return { Code: code.Code, Description: code.Description, element: newRow }
+      return { Code: code.Code, Description: code.Description, Notes: code.Notes, element: newRow }
       
     })
   })

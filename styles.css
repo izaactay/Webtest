@@ -33,11 +33,14 @@ input {
 }
 */
 
-tbody {
-  height: 300px;
-  overflow: auto;
-}
+
 
 .hide {
   display: none;
+}
+
+.error_message {
+  display: none;
+  text-align: center;
+  padding-top: 4rem;
 }
